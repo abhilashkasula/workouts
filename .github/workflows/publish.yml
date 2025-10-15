@@ -1,0 +1,38 @@
+name: Pull commit trend
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '0 0 * * 1-5'
+
+permissions:
+  id-token: write
+  contents: write
+  pages: write
+
+jobs:
+  pull-and-test-latest-code:
+    name: Pull commit trend
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v4.1.1
+      - name: Setup Node
+        uses: actions/setup-node@v4.0.2
+        with:
+          node-version: 18.20.4
+      - name: Install dependencies
+        run: npm install
+      - name: Pull commit trend
+        env:
+          LIVEZY_URL: ${{ secrets.livezy_url }}
+          ATHELETE_ID: ${{ secrets.athelete_id }}
+        run: npm run pull
+      # - name: Minify code
+      #   run: npm run minify
+      - name: Deploy 🚀
+        uses: JamesIves/github-pages-deploy-action@v4
+        with:
+          folder: .
+          branch: gh-pages
+          commit-message: '🚀 Deploy to pages 🚀'
