@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>My Workout</title>
+    <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            font-family: sans-serif;
+        }
+
+        h1 {
+            margin-bottom: 0;
+        }
+
+        #workoutAssigned {
+            font-weight: bold;
+        }
+
+        .date-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin: 50px 0;
+        }
+
+        .date-container * {
+            margin-bottom: 5px;
+        }
+
+        .workout {
+            border: 1px solid #ccc;
+            padding: 20px;
+            margin: 15px;
+        }
+
+        iframe {
+            width: 560px;
+            height: 315px;
+        }
+
+        .workout-name,
+        .workout-sets {
+            margin: 0;
+            margin-top: 10px;
+            font-size: 15px;
+        }
+
+        .workout-name {
+            font-weight: bold;
+        }
+
+        #workouts, #warm-up, #cool-down {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        .container {
+            text-align: center;
+            margin-bottom: 15px;
+        }
+    </style>
+    <script>
+
+        const warmUpWorkouts = {
+            "lowerbody": [
+                { movementName: 'Cat and Camel', reps: { value: '15 reps' }, videoLink: 'https://youtu.be/NQ-Lb65zlcg' },
+                { movementName: 'Cobra to Mountain', reps: { value: '10 reps' }, videoLink: 'https://youtu.be/pfqUFeRVOiE' },
+                { movementName: 'Quad Rock Backs', reps: { value: '15 reps' }, videoLink: 'https://youtu.be/-l2EoLjZoKI' },
+                { movementName: 'Bench Hip Flexor Stretch', reps: { value: '2 x 10 sec' }, videoLink: 'https://youtu.be/dMi1aW_8MsU' },
+                { movementName: 'Pigeon Stretch', reps: { value: '2 x 10 sec' }, videoLink: 'https://youtu.be/_VrAIJH5XJA' }
+            ],
+            "upperbody": [
+                { movementName: 'Deep squat with thoracic rotation', reps: { value: '10 reps each side' }, videoLink: 'https://youtu.be/lq2ml4r-aK8' },
+                { movementName: 'Subscap Stretch', reps: { value: '3 x 12 reps' }, videoLink: 'https://youtu.be/JvfvGGGRS4w' },
+                { movementName: 'Shoulder Dislocates', reps: { value: '10 reps' }, videoLink: 'https://youtu.be/iyqTHK2KScc' },
+                { movementName: 'Band Pull Apart', reps: { value: '4 x 12 reps' }, videoLink: 'https://youtu.be/_Qugk-A99Jo' },
+                { movementName: 'Spiderman + Thoracic Rotation', reps: { value: '10 reps each side' }, videoLink: 'https://youtu.be/8Mi6rk7RK8c' }
+            ]
+        };
+
+        const coolDownWorkouts = {
+            "lowerbody": [
+                { movementName: 'Quad Stretch', reps: { value: 'Hold for 15 seconds each side' }, videoLink: 'https://youtu.be/mFcBf_I_TOw' },
+                { movementName: 'Cobra to Mountain', reps: { value: 'Hold for 15 seconds each side' }, videoLink: 'https://youtu.be/pfqUFeRVOiE' },
+                { movementName: 'Hamstring Stretch', reps: { value: 'Hold for 15 seconds each side' }, videoLink: 'https://youtu.be/PQDYJJySi5I' },
+                { movementName: 'Pigeon Stretch', reps: { value: 'Hold for 15 seconds each side' }, videoLink: 'https://youtu.be/_VrAIJH5XJA' },
+                { movementName: 'Calf Stretch', reps: { value: 'Hold for 15 seconds each side' }, videoLink: 'https://youtu.be/4g_7dCIYhsc' }
+            ],
+            "upperbody": [
+                { movementName: 'Chest Stretch', reps: { value: 'Hold for 15 seconds each side' }, videoLink: 'https://youtu.be/LOpzGyZyr7s' },
+                { movementName: 'Lat Stretch', reps: { value: 'Hold for 15 seconds each side' }, videoLink: 'https://youtu.be/Ru9vEsZ33wA' },
+                { movementName: 'Bicep Stretch', reps: { value: 'Hold for 15 seconds each side' }, videoLink: 'https://youtu.be/CHW48OEjWWY' },
+                { movementName: 'Shoulder & Tricep Stretch', reps: { value: 'Hold for 15 seconds each side' }, videoLink: 'https://youtu.be/XAVM_tHBx6A' },
+                { movementName: 'Forearm Stretch', reps: { value: 'Hold for 15 seconds each side' }, videoLink: 'https://youtu.be/mVsXpZoq_Og' }
+            ]
+        }
+
+        const createWorkouts = (container, data) => {
+            const workout = document.createElement('div')
+            workout.className = 'workout';
+            const { videoLink, movementName, reps, duration } = data;
+            const splitLink = videoLink.split('/')
+            let videoId = splitLink[splitLink.length - 1];
+            if (videoLink.includes('?')) {
+                const split = videoLink.split('=');
+                videoId = split[split.length - 1];
+            }
+            const iframe = document.createElement('iframe');
+            iframe.setAttribute('src', `https://www.youtube.com/embed/${videoId}`);
+            iframe.setAttribute('frameborder', '0');
+            iframe.setAttribute('allow', 'accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share');
+            iframe.setAttribute('allowfullscreen', true);
+            iframe.setAttribute('referrerpolicy', "strict-origin-when-cross-origin");
+            const name = document.createElement('p');
+            name.className = 'workout-name';
+            name.textContent = movementName;
+            const sets = document.createElement('p');
+            sets.className = 'workout-sets';
+            sets.textContent = 'Sets: ' + Object.values(reps ?? duration).join(', ');
+            workout.append(iframe, name, sets);
+            container.append(workout);
+        };
+
+        window.onload = async () => {
+            const data = await fetch('data.json').then(res => res.json());
+            document.querySelector('#workoutAssigned').textContent = data.workoutAssigned.name;
+            document.querySelector('#date').textContent = data.date;
+            const workouts = document.querySelector('#workouts')
+            const warmup = document.querySelector('#warm-up')
+            const cooldown = document.querySelector('#cool-down')
+
+            const key = data.workoutAssigned.name.toLowerCase().replaceAll(' ', '');
+
+            const warmUpExercies = warmUpWorkouts[key] ?? warmUpWorkouts.upperbody;
+            const coolDownExercies = coolDownWorkouts[key] ?? coolDownWorkouts.upperbody;
+
+            warmUpExercies.forEach(meas => createWorkouts(warmup, meas));
+            data.workoutAssigned.workoutContent.rounds[0].round.measurements.forEach(meas => {
+                createWorkouts(workouts, meas.measurement);
+            });
+            coolDownExercies.forEach(meas => createWorkouts(cooldown, meas));
+        };
+    </script>
+</head>
+
+<body>
+    <h1>Workout Schedule</h1>
+    <div class="date-container">
+        <div>Date: <span id="date"></span></div>
+        <div>Today's workout: <span id="workoutAssigned"></span></div>
+    </div>
+
+    <div class="container">
+        <h3>Warm up</h3>
+        <div id="warm-up"></div>
+    </div>
+    <div class="container">
+        <h3>Main workouts</h3>
+        <div id="workouts"></div>
+    </div>
+    <div class="container">
+        <h3>Cool down</h3>
+        <div id="cool-down"></div>
+    </div>
+</body>
+
+</html>
