@@ -43,7 +43,8 @@
         }
 
         .workout-name,
-        .workout-sets {
+        .workout-sets,
+        .workout-instruction {
             margin: 0;
             margin-top: 10px;
             font-size: 15px;
@@ -103,7 +104,7 @@
         const createWorkouts = (container, data) => {
             const workout = document.createElement('div')
             workout.className = 'workout';
-            const { videoLink, movementName, reps, duration } = data;
+            const { videoLink, movementName, movementInstr, reps, duration } = data;
             const splitLink = videoLink.split('/')
             let videoId = splitLink[splitLink.length - 1];
             if (videoLink.includes('?')) {
@@ -123,6 +124,12 @@
             sets.className = 'workout-sets';
             sets.textContent = 'Sets: ' + Object.values(reps ?? duration).join(', ');
             workout.append(iframe, name, sets);
+            if (movementInstr) {
+                const instr = document.createElement('p');
+                instr.className = 'workout-instruction';
+                instr.textContent = `Instruction: ${movementInstr}`;
+                workout.append(instr);
+            }
             container.append(workout);
         };
 
