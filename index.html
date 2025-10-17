@@ -108,8 +108,8 @@
             const splitLink = videoLink.split('/')
             let videoId = splitLink[splitLink.length - 1];
             if (videoLink.includes('?')) {
-                const split = videoLink.split('=');
-                videoId = split[split.length - 1];
+                const match = videoLink.match(/v=[^&]*/)[0];
+                videoId = match.slice(2);
             }
             const iframe = document.createElement('iframe');
             iframe.setAttribute('src', `https://www.youtube.com/embed/${videoId}`);
