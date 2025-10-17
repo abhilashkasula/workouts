@@ -147,8 +147,10 @@
             const coolDownExercies = coolDownWorkouts[key] ?? coolDownWorkouts.upperbody;
 
             warmUpExercies.forEach(meas => createWorkouts(warmup, meas));
-            data.workoutAssigned.workoutContent.rounds[0].round.measurements.forEach(meas => {
-                createWorkouts(workouts, meas.measurement);
+            data.workoutAssigned.workoutContent.rounds.forEach(({round}) => {
+                round.measurements.forEach(meas => {
+                    createWorkouts(workouts, meas.measurement);
+                })
             });
             coolDownExercies.forEach(meas => createWorkouts(cooldown, meas));
         };
