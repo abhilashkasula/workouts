@@ -136,7 +136,7 @@
         window.onload = async () => {
             const data = await fetch('data.json').then(res => res.json());
             document.querySelector('#workoutAssigned').textContent = data.workoutAssigned.name;
-            document.querySelector('#date').textContent = data.date;
+            document.querySelector('#date').textContent = (new Date(data.date)).toLocaleString();
             const workouts = document.querySelector('#workouts')
             const warmup = document.querySelector('#warm-up')
             const cooldown = document.querySelector('#cool-down')
@@ -160,7 +160,7 @@
 <body>
     <h1>Workout Schedule</h1>
     <div class="date-container">
-        <div>Date: <span id="date"></span></div>
+        <div>Updated time: <span id="date"></span></div>
         <div>Today's workout: <span id="workoutAssigned"></span></div>
     </div>
 
