@@ -1,0 +1,393 @@
+{
+    "id": "bf8c97fc-caa9-4420-a34c-8cbfc7d2aae1",
+    "atheleteID": "9dc93207-87fc-4cbe-94a7-bfe723cd74a7",
+    "workoutAssignedID": "10760bda-44c0-410b-909a-fdfd8004cac2",
+    "dateAssigned": "2025-10-23T00:00:00.000Z",
+    "finished": true,
+    "timeToFinish": 1800,
+    "orderIdx": 1,
+    "workoutFinishedID": "1bf416f6-db34-48a8-bf12-5ef4e2eea1d0",
+    "dateFinished": "2025-10-23T00:00:00.000Z",
+    "totalReps": 0,
+    "totalHeight": 0,
+    "totalWeight": 0,
+    "totalDistance": 0,
+    "totalDuration": 0,
+    "totalCalories": 0,
+    "scoreTime": null,
+    "scoreLoad": null,
+    "scoreReps": null,
+    "scoreRounds": null,
+    "percievedDifficultyLevel": null,
+    "difficultyLevel": null,
+    "feedback": null,
+    "rating": null,
+    "assignedProgramTrackerID": "a29da4e1-3b52-4fe0-b1e5-d8ac153f70bf",
+    "assignedCFProgramDaysWorkoutsID": "c74c2ef6-1a2b-4458-88d7-f53020690db4",
+    "workoutAssigned": {
+        "id": "10760bda-44c0-410b-909a-fdfd8004cac2",
+        "name": "Abs & Upper body",
+        "numRounds": 1,
+        "runTime": 0,
+        "restTime": 0,
+        "visibility": false,
+        "benchMark": false,
+        "expectedCalories": 0,
+        "equipment": null,
+        "bodyPart": null,
+        "isStructured": true,
+        "description": null,
+        "instructions": null,
+        "coachID": "5770cca6-cbba-43d9-86da-8ec0da581271",
+        "workoutType": "NOSCORE",
+        "workoutKind": null,
+        "tag": null,
+        "dateCreated": "2024-02-16T00:00:00.000Z",
+        "workoutContent": {
+            "rounds": [
+                {
+                    "round": {
+                        "type": "Mixed Sets",
+                        "numRounds": 1,
+                        "measurements": [
+                            {
+                                "measurement": {
+                                    "reps": {
+                                        "1": 12,
+                                        "2": 12,
+                                        "3": 12,
+                                        "4": 12
+                                    },
+                                    "repsMax": {
+                                        "1": 15,
+                                        "2": 15,
+                                        "3": 15,
+                                        "4": 15
+                                    },
+                                    "imageLink": "https://spurfitpublicimages2.s3.us-east-2.amazonaws.com/AppVideosLatest/Images/dc7PMIfed3M.jpg",
+                                    "numRounds": 4,
+                                    "videoLink": "https://youtu.be/dc7PMIfed3M",
+                                    "movementID": "hJdKutBSTvlM",
+                                    "movementName": "Dumbbell flat chest press",
+                                    "movementInstr": ""
+                                }
+                            },
+                            {
+                                "measurement": {
+                                    "reps": {
+                                        "1": 15,
+                                        "2": 15,
+                                        "3": 15
+                                    },
+                                    "imageLink": "https://spurfitpublicimages2.s3.us-east-2.amazonaws.com/AppVideosLatest/Images/FSLkfqqN1qY.jpg",
+                                    "numRounds": 3,
+                                    "videoLink": "https://youtu.be/FSLkfqqN1qY",
+                                    "movementID": "nWBUHaUIPrEc",
+                                    "movementName": "Dumbbell flys",
+                                    "movementInstr": ""
+                                }
+                            },
+                            {
+                                "measurement": {
+                                    "reps": {
+                                        "1": 12,
+                                        "2": 12,
+                                        "3": 12,
+                                        "4": 12
+                                    },
+                                    "imageLink": "https://spurfitpublicimages2.s3.us-east-2.amazonaws.com/AppVideosLatest/Images/H264HrfKzCU.jpg",
+                                    "numRounds": 4,
+                                    "videoLink": "https://youtu.be/H264HrfKzCU",
+                                    "movementID": "SPmKMWcvfPbm",
+                                    "movementName": "Push ups",
+                                    "movementInstr": ""
+                                }
+                            },
+                            {
+                                "measurement": {
+                                    "reps": {
+                                        "1": 12,
+                                        "2": 12,
+                                        "3": 12
+                                    },
+                                    "imageLink": "https://spurfitpublicimages2.s3.us-east-2.amazonaws.com/AppVideosLatest/Images/HzVEBmxn7bs.jpg",
+                                    "numRounds": 3,
+                                    "videoLink": "https://youtu.be/HzVEBmxn7bs",
+                                    "movementID": "XdHFbHLChGKU",
+                                    "movementName": "Dumbbell hammer curls",
+                                    "movementInstr": ""
+                                }
+                            },
+                            {
+                                "measurement": {
+                                    "reps": {
+                                        "1": 15,
+                                        "2": 15,
+                                        "3": 15,
+                                        "4": 15
+                                    },
+                                    "imageLink": "https://spurfitpublicimages2.s3.us-east-2.amazonaws.com/AppVideosLatest/Images/2Kfig-KXvXc.jpg",
+                                    "numRounds": 4,
+                                    "videoLink": "https://www.youtube.com/watch?v=2Kfig-KXvXc&feature=youtu.be",
+                                    "movementID": "jrZqDRfugdUB",
+                                    "movementName": "Band bicep curl",
+                                    "movementInstr": ""
+                                }
+                            },
+                            {
+                                "measurement": {
+                                    "reps": {
+                                        "1": 15,
+                                        "2": 15,
+                                        "3": 15
+                                    },
+                                    "imageLink": "https://spurfitpublicimages2.s3.us-east-2.amazonaws.com/AppVideosLatest/Images/ySzXBITQhHI.jpg",
+                                    "numRounds": 3,
+                                    "videoLink": "https://youtu.be/ySzXBITQhHI",
+                                    "movementID": "ajIexrjZNUbD",
+                                    "movementName": "Dumbbell Tricep Extension",
+                                    "movementInstr": " Each Side"
+                                }
+                            },
+                            {
+                                "measurement": {
+                                    "reps": {
+                                        "1": 12,
+                                        "2": 12,
+                                        "3": 12,
+                                        "4": 12
+                                    },
+                                    "imageLink": "https://spurfitpublicimages2.s3.us-east-2.amazonaws.com/AppVideosLatest/Images/3x3UO0mvsKA.jpg",
+                                    "numRounds": 4,
+                                    "videoLink": "https://youtu.be/3x3UO0mvsKA",
+                                    "movementID": "HjzPySsfkqdw",
+                                    "movementName": "Band Tricep Extension",
+                                    "movementInstr": ""
+                                }
+                            },
+                            {
+                                "measurement": {
+                                    "reps": {
+                                        "1": 10,
+                                        "2": 10,
+                                        "3": 10
+                                    },
+                                    "imageLink": "https://spurfitpublicimages2.s3.us-east-2.amazonaws.com/AppVideosLatest/Images/89lwQSW6W6I.jpg",
+                                    "numRounds": 3,
+                                    "videoLink": "https://www.youtube.com/watch?v=89lwQSW6W6I&feature=youtu.be",
+                                    "movementID": "xFOgiseYAUtL",
+                                    "movementName": "Band Lateral raises",
+                                    "movementInstr": ""
+                                }
+                            }
+                        ]
+                    }
+                }
+            ]
+        },
+        "videoLinks": null,
+        "isCoachWorkout": false,
+        "workoutFolderId": null,
+        "isBlockWorkoutBuilder": true,
+        "isDefaultWorkout": false,
+        "workoutCategory": []
+    },
+    "workoutFinished": {
+        "id": "1bf416f6-db34-48a8-bf12-5ef4e2eea1d0",
+        "name": "Abs & Upper body",
+        "numRounds": 1,
+        "runTime": 0,
+        "restTime": 0,
+        "visibility": false,
+        "benchMark": false,
+        "expectedCalories": 0,
+        "equipment": null,
+        "bodyPart": null,
+        "isStructured": true,
+        "description": null,
+        "instructions": null,
+        "coachID": "5770cca6-cbba-43d9-86da-8ec0da581271",
+        "workoutType": "NOSCORE",
+        "workoutKind": null,
+        "tag": null,
+        "dateCreated": "2024-02-16T00:00:00.000Z",
+        "workoutContent": {
+            "rounds": [
+                {
+                    "round": {
+                        "type": "Mixed Sets",
+                        "numRounds": 1,
+                        "measurements": [
+                            {
+                                "measurement": {
+                                    "reps": {
+                                        "1": "16",
+                                        "2": "16",
+                                        "3": "15",
+                                        "4": "15"
+                                    },
+                                    "weight": {
+                                        "1": "7.5",
+                                        "2": "7.5",
+                                        "3": "7.5",
+                                        "4": "7.5"
+                                    },
+                                    "repsMax": {
+                                        "1": 15,
+                                        "2": 15,
+                                        "3": 15,
+                                        "4": 15
+                                    },
+                                    "imageLink": "https://spurfitpublicimages2.s3.us-east-2.amazonaws.com/AppVideosLatest/Images/dc7PMIfed3M.jpg",
+                                    "videoLink": "https://youtu.be/dc7PMIfed3M",
+                                    "movementID": "hJdKutBSTvlM",
+                                    "weightUnits": "Kilograms",
+                                    "movementName": "Dumbbell flat chest press"
+                                }
+                            },
+                            {
+                                "measurement": {
+                                    "reps": {
+                                        "1": "12",
+                                        "2": "12",
+                                        "3": "12"
+                                    },
+                                    "weight": {
+                                        "1": "7.5",
+                                        "2": "7.5",
+                                        "3": "7.5"
+                                    },
+                                    "imageLink": "https://spurfitpublicimages2.s3.us-east-2.amazonaws.com/AppVideosLatest/Images/FSLkfqqN1qY.jpg",
+                                    "videoLink": "https://youtu.be/FSLkfqqN1qY",
+                                    "movementID": "nWBUHaUIPrEc",
+                                    "weightUnits": "Kilograms",
+                                    "movementName": "Dumbbell flys"
+                                }
+                            },
+                            {
+                                "measurement": {
+                                    "reps": {
+                                        "1": "6",
+                                        "2": "6",
+                                        "3": "4"
+                                    },
+                                    "imageLink": "https://spurfitpublicimages2.s3.us-east-2.amazonaws.com/AppVideosLatest/Images/H264HrfKzCU.jpg",
+                                    "videoLink": "https://youtu.be/H264HrfKzCU",
+                                    "movementID": "SPmKMWcvfPbm",
+                                    "movementName": "Push ups"
+                                }
+                            },
+                            {
+                                "measurement": {
+                                    "reps": {
+                                        "1": 12,
+                                        "2": 12,
+                                        "3": 12
+                                    },
+                                    "weight": {
+                                        "1": "5",
+                                        "2": "7.5",
+                                        "3": "5"
+                                    },
+                                    "imageLink": "https://spurfitpublicimages2.s3.us-east-2.amazonaws.com/AppVideosLatest/Images/HzVEBmxn7bs.jpg",
+                                    "videoLink": "https://youtu.be/HzVEBmxn7bs",
+                                    "movementID": "XdHFbHLChGKU",
+                                    "weightUnits": "Kilograms",
+                                    "movementName": "Dumbbell hammer curls"
+                                }
+                            },
+                            {
+                                "measurement": {
+                                    "reps": {
+                                        "1": 15,
+                                        "2": 15,
+                                        "3": 15,
+                                        "4": 15
+                                    },
+                                    "weight": {
+                                        "1": "25",
+                                        "2": "25",
+                                        "3": "25",
+                                        "4": "25"
+                                    },
+                                    "imageLink": "https://spurfitpublicimages2.s3.us-east-2.amazonaws.com/AppVideosLatest/Images/2Kfig-KXvXc.jpg",
+                                    "videoLink": "https://www.youtube.com/watch?v=2Kfig-KXvXc&feature=youtu.be",
+                                    "movementID": "jrZqDRfugdUB",
+                                    "weightUnits": "Pounds",
+                                    "movementName": "Band bicep curl"
+                                }
+                            },
+                            {
+                                "measurement": {
+                                    "reps": {
+                                        "1": "11",
+                                        "2": "11",
+                                        "3": "10"
+                                    },
+                                    "weight": {
+                                        "1": "5",
+                                        "2": "5",
+                                        "3": "5"
+                                    },
+                                    "imageLink": "https://spurfitpublicimages2.s3.us-east-2.amazonaws.com/AppVideosLatest/Images/ySzXBITQhHI.jpg",
+                                    "videoLink": "https://youtu.be/ySzXBITQhHI",
+                                    "movementID": "ajIexrjZNUbD",
+                                    "weightUnits": "Kilograms",
+                                    "movementName": "Dumbbell Tricep Extension",
+                                    "movementInstr": " Each Side"
+                                }
+                            },
+                            {
+                                "measurement": {
+                                    "reps": {
+                                        "1": 12,
+                                        "2": 12,
+                                        "3": 12,
+                                        "4": 12
+                                    },
+                                    "weight": {
+                                        "1": "25",
+                                        "2": "25",
+                                        "3": "25",
+                                        "4": "25"
+                                    },
+                                    "imageLink": "https://spurfitpublicimages2.s3.us-east-2.amazonaws.com/AppVideosLatest/Images/3x3UO0mvsKA.jpg",
+                                    "videoLink": "https://youtu.be/3x3UO0mvsKA",
+                                    "movementID": "HjzPySsfkqdw",
+                                    "weightUnits": "Pounds",
+                                    "movementName": "Band Tricep Extension"
+                                }
+                            },
+                            {
+                                "measurement": {
+                                    "reps": {
+                                        "1": "12",
+                                        "2": "12",
+                                        "3": "12"
+                                    },
+                                    "weight": {
+                                        "1": "25",
+                                        "2": "25",
+                                        "3": "25"
+                                    },
+                                    "imageLink": "https://spurfitpublicimages2.s3.us-east-2.amazonaws.com/AppVideosLatest/Images/89lwQSW6W6I.jpg",
+                                    "videoLink": "https://www.youtube.com/watch?v=89lwQSW6W6I&feature=youtu.be",
+                                    "movementID": "xFOgiseYAUtL",
+                                    "weightUnits": "Pounds",
+                                    "movementName": "Band Lateral raises"
+                                }
+                            }
+                        ]
+                    }
+                }
+            ]
+        },
+        "videoLinks": null,
+        "isCoachWorkout": false,
+        "workoutFolderId": null,
+        "isBlockWorkoutBuilder": true,
+        "isDefaultWorkout": false,
+        "workoutCategory": []
+    },
+    "date": "2025-10-23T22:16:57.016Z"
+}

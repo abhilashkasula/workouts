@@ -101,6 +101,8 @@
             ]
         }
 
+        const days = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'];
+
         const createWorkouts = (container, data) => {
             const workout = document.createElement('div')
             workout.className = 'workout';
@@ -134,9 +136,17 @@
         };
 
         window.onload = async () => {
-            const data = await fetch('data.json').then(res => res.json());
+            const date = new Date();
+            const day = date.getDay();
+            const dayName = days[day];
+            document.querySelector('#date').textContent = dayName;
+            if (day === 0 || day === 6) {
+                document.querySelector('#workoutAssigned').textContent = 'Cardio';
+                document.querySelector('.main').textContent = 'Walk for 30 mins';
+                return;
+            }
+            const data = await fetch(`data/${dayName.toLocaleLowerCase()}.json`).then(res => res.json());
             document.querySelector('#workoutAssigned').textContent = data.workoutAssigned.name;
-            document.querySelector('#date').textContent = (new Date(data.date)).toLocaleString();
             const workouts = document.querySelector('#workouts')
             const warmup = document.querySelector('#warm-up')
             const cooldown = document.querySelector('#cool-down')
@@ -160,21 +170,23 @@
 <body>
     <h1>Workout Schedule</h1>
     <div class="date-container">
-        <div>Updated time: <span id="date"></span></div>
+        <div>Day: <span id="date"></span></div>
         <div>Today's workout: <span id="workoutAssigned"></span></div>
     </div>
 
-    <div class="container">
-        <h3>Warm up</h3>
-        <div id="warm-up"></div>
-    </div>
-    <div class="container">
-        <h3>Main workouts</h3>
-        <div id="workouts"></div>
-    </div>
-    <div class="container">
-        <h3>Cool down</h3>
-        <div id="cool-down"></div>
+    <div class="main">
+        <div class="container">
+            <h3>Warm up</h3>
+            <div id="warm-up"></div>
+        </div>
+        <div class="container">
+            <h3>Main workouts</h3>
+            <div id="workouts"></div>
+        </div>
+        <div class="container">
+            <h3>Cool down</h3>
+            <div id="cool-down"></div>
+        </div>
     </div>
 </body>
 

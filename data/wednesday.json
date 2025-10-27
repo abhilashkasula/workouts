@@ -1,0 +1,144 @@
+{
+    "id": "a8908ef9-0fbe-4daf-8183-d818dc063705",
+    "atheleteID": "9dc93207-87fc-4cbe-94a7-bfe723cd74a7",
+    "workoutAssignedID": "57beccc5-a1d5-48bf-820a-1deca09f60a8",
+    "dateAssigned": "2025-10-22T00:00:00.000Z",
+    "finished": false,
+    "timeToFinish": 0,
+    "orderIdx": 1,
+    "workoutFinishedID": null,
+    "dateFinished": null,
+    "totalReps": 0,
+    "totalHeight": 0,
+    "totalWeight": 0,
+    "totalDistance": 0,
+    "totalDuration": 0,
+    "totalCalories": 0,
+    "scoreTime": null,
+    "scoreLoad": null,
+    "scoreReps": null,
+    "scoreRounds": null,
+    "percievedDifficultyLevel": null,
+    "difficultyLevel": null,
+    "feedback": null,
+    "rating": null,
+    "assignedProgramTrackerID": "a29da4e1-3b52-4fe0-b1e5-d8ac153f70bf",
+    "assignedCFProgramDaysWorkoutsID": "94ee8dbf-3408-4a95-83a9-2c2950288639",
+    "workoutAssigned": {
+        "id": "57beccc5-a1d5-48bf-820a-1deca09f60a8",
+        "name": "Lower body",
+        "numRounds": 1,
+        "runTime": 0,
+        "restTime": 0,
+        "visibility": false,
+        "benchMark": false,
+        "expectedCalories": 0,
+        "equipment": null,
+        "bodyPart": null,
+        "isStructured": true,
+        "description": null,
+        "instructions": null,
+        "coachID": "5770cca6-cbba-43d9-86da-8ec0da581271",
+        "workoutType": "NOSCORE",
+        "workoutKind": null,
+        "tag": null,
+        "dateCreated": "2024-02-16T00:00:00.000Z",
+        "workoutContent": {
+            "rounds": [
+                {
+                    "round": {
+                        "type": "Mixed Sets",
+                        "numRounds": 1,
+                        "measurements": [
+                            {
+                                "measurement": {
+                                    "reps": {
+                                        "1": 10,
+                                        "2": 10,
+                                        "3": 10,
+                                        "4": 10
+                                    },
+                                    "imageLink": "https://spurfitpublicimages2.s3.us-east-2.amazonaws.com/AppVideosLatest/Images/LRzjFYmQdCU.jpg",
+                                    "numRounds": 4,
+                                    "videoLink": "https://www.youtube.com/watch?v=LRzjFYmQdCU",
+                                    "movementID": "nWrmEPKVurkf",
+                                    "movementName": "Band Front Squat",
+                                    "movementInstr": ""
+                                }
+                            },
+                            {
+                                "measurement": {
+                                    "reps": {
+                                        "1": 10,
+                                        "2": 10,
+                                        "3": 10
+                                    },
+                                    "imageLink": "https://spurfitpublicimages2.s3.us-east-2.amazonaws.com/AppVideosLatest/Images/SwNBihJnlaI.jpg",
+                                    "numRounds": 3,
+                                    "videoLink": "https://youtu.be/SwNBihJnlaI",
+                                    "movementID": "axTkPbDkDgxV",
+                                    "movementName": "Walking lunges",
+                                    "movementInstr": " Each Side"
+                                }
+                            },
+                            {
+                                "measurement": {
+                                    "reps": {
+                                        "1": 10,
+                                        "2": 10,
+                                        "3": 10
+                                    },
+                                    "imageLink": "https://spurfitpublicimages2.s3.us-east-2.amazonaws.com/AppVideosLatest/Images/87_TziUUfbE.jpg",
+                                    "numRounds": 3,
+                                    "videoLink": "https://youtu.be/87_TziUUfbE",
+                                    "movementID": "zSDgVBKNMHbZ",
+                                    "movementName": "Dumbbell Goblet Bulgarian Split Squat",
+                                    "movementInstr": " Each Side"
+                                }
+                            },
+                            {
+                                "measurement": {
+                                    "reps": {
+                                        "1": 10,
+                                        "2": 10,
+                                        "3": 10,
+                                        "4": 10
+                                    },
+                                    "imageLink": "https://spurfitpublicimages2.s3.us-east-2.amazonaws.com/AppVideosLatest/Images/6LpdIdneoy4.jpg",
+                                    "numRounds": 4,
+                                    "videoLink": "https://youtu.be/6LpdIdneoy4",
+                                    "movementID": "qkeAkYbbQpiw",
+                                    "movementName": "Dumbbell steps ups",
+                                    "movementInstr": ""
+                                }
+                            },
+                            {
+                                "measurement": {
+                                    "reps": {
+                                        "1": 10,
+                                        "2": 10,
+                                        "3": 10
+                                    },
+                                    "imageLink": "https://spurfitpublicimages2.s3.us-east-2.amazonaws.com/AppVideosLatest/Images/r1Jj8o3fmPI.jpg",
+                                    "numRounds": 3,
+                                    "videoLink": "https://www.youtube.com/watch?v=r1Jj8o3fmPI",
+                                    "movementID": "rjAVdnAvfzjG",
+                                    "movementName": "Band Glute Extensions",
+                                    "movementInstr": ""
+                                }
+                            }
+                        ]
+                    }
+                }
+            ]
+        },
+        "videoLinks": null,
+        "isCoachWorkout": false,
+        "workoutFolderId": null,
+        "isBlockWorkoutBuilder": true,
+        "isDefaultWorkout": false,
+        "workoutCategory": []
+    },
+    "workoutFinished": null,
+    "date": "2025-10-22T22:14:26.024Z"
+}
